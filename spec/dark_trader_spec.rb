@@ -4,14 +4,14 @@ require 'open-uri'
 page = Nokogiri::HTML(URI.open("https://coinmarketcap.com/"))
 
 
-describe "the program get data" do
+describe "the crypto name method" do
   it " return crypto's symbol and crypto is not nil" do
-    expect(crypto_price(page)).not_to be_nil
+    expect(crypto_name(page)).not_to be_nil
   end
 end  
 
-describe "the program get data" do
-  it " return crypto's symbol and crypto is not nil" do
-    expect(crypto_name(page)).not_to be_nil
+describe "the crypto price method" do
+  it " return crypto's price and crypto is not nil" do
+    expect(crypto_price(page)).not_to be_nil
   end
 end  
