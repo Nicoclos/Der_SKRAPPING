@@ -16,3 +16,4 @@ end
 name=crypto_name(page)
 price = crypto_price(page)
 puts tableau = Hash[name.zip(price)]
+#will provide the hash with crypto names and values
